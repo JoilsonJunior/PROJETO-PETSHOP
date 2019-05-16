@@ -1,11 +1,72 @@
-body.{
-	margin: 0;
-}
+body{
+      background-color:#11a6d4;
+    }
+    #login-box{
+      background-color:#1992b7;
+      width:360px;
+      height:600px;
+      margin:140px auto 0px;
+      border-radius: 5px;
+    }
+    #login-box-interno{
+      width:360px;
+      height:650px;
+      background-color:#fdfdfd;
+      border-radius:5px;
+      box-shadow:0px 0px 55px black;
+      overflow:hidden;
+    }
 
-.container{
+		.input-div{
+			margin: 30px;
+			padding: 7px;
+			background-color: #f2f5f7;
+			border-radius: 3px;
+		}
+		.input-div input{
+			width: 282px;
+			height: 35px;
+			padding-left: 5px;
+			font: normal 13px sans-serif;
+			color:#aeaeae;
+			border-radius: 3px;
+			border:1px solid #bfc4c6;
+			outline: none;
+		}
+		.input-div:hover input{
+			background-color: #e0f1fc;
+		}
+		#input-usuario{
+			margin-top:0px;
+		}
+		#input-senha{
+			margin-top:-10px;
+		}
+		#botoes{
+			width: 310px;
+			margin-left: 20px;
+      margin-top: 50px;
+    }
+		#botao{
 
-height: 500px;
-background-color: #333333;
-width: 100%;
+			background-color: red;
+			padding: 10px 25px;
+			font: bold 12px sans-serif;
+			border-radius: 20px;
+			text-shadow: 0px 1px 0px white;
+			border: 1px solid #9eb9c3;
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#edf6f9+0,cde5ee+100 */
+background: #edf6f9; /* Old browsers */
+background: -moz-linear-gradient(top,  #edf6f9 0%, #cde5ee 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #edf6f9 0%,#cde5ee 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #edf6f9 0%,#cde5ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf6f9', endColorstr='#cde5ee',GradientType=0 ); /* IE6-9 */
+color: #527988;
+box-shadow: 0px 0px 10px #c9c9c9;
+		}
+		a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #585553;
 
-}
+	}
