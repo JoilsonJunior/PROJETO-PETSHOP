@@ -1,3 +1,10 @@
+function cadastroUsuario(){
+    
+}
+
+
+
+
 var usuarios = [
     {"login": "teste@teste", "senha": "1234"},
     {"login": "mamae", "senha": "abacaxi"},
