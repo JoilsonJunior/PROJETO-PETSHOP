@@ -11,7 +11,7 @@ function Login() {
     for (var u in usuarios) {
         var us = usuarios[u];
         if (us.login === usuario && us.senha === senha) {
-            window.location = "index.html";
+            window.location = "telaprincipal.html";
             return true;
         }
     }
