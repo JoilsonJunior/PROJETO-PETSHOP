@@ -1,37 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>App</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="cadastroUsuario.css">
-	<meta id="viewport" name="viewport" content="width=device-whidth,">
-</head>
+  <meta charset="utf-8">
+  <title>app</title>
+
+  <style>
+    body{
+      background-color:#11a6d4;
+    }
+    #login-box{
+      background-color:#1992b7;
+      width:360px;
+      height:600px;
+      margin:140px auto 0px;
+      border-radius: 5px;
+    }
+    #login-box-interno{
+      width:360px;
+      height:650px;
+      background-color:#fdfdfd;
+      border-radius:5px;
+      box-shadow:0px 0px 55px black;
+      overflow:hidden;
+    }
+
+		.input-div{
+			margin: 30px;
+			padding: 7px;
+			background-color: #f2f5f7;
+			border-radius: 3px;
+		}
+		.input-div input{
+			width: 282px;
+			height: 35px;
+			padding-left: 5px;
+			font: normal 13px sans-serif;
+			color:#aeaeae;
+			border-radius: 3px;
+			border:1px solid #bfc4c6;
+			outline: none;
+		}
+		.input-div:hover input{
+			background-color: #e0f1fc;
+		}
+		#input-Nome{
+			margin-top:50px;
+		}
+		#input-usuario{
+			margin-top:0px;
+		}
+		#input-senha{
+			margin-top:-10px;
+		}
+		#botoes{
+
+      width: 310px;
+			margin-left: -100px;
+    }
+		#botoes1{
+			width: 310px;
+			margin-left: 120px;
+			margin-top: -35px;
+		}
+		#botao{
+			floating: left
+			background-color: red;
+			padding: 10px 25px;
+			font: bold 12px sans-serif;
+			border-radius: 20px;
+			text-shadow: 0px 1px 0px white;
+			border: 1px solid #9eb9c3;
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#edf6f9+0,cde5ee+100 */
+background: #edf6f9; /* Old browsers */
+background: -moz-linear-gradient(top,  #edf6f9 0%, #cde5ee 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #edf6f9 0%,#cde5ee 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #edf6f9 0%,#cde5ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf6f9', endColorstr='#cde5ee',GradientType=0 ); /* IE6-9 */
+color: #527988;
+box-shadow: 0px 0px 10px #c9c9c9;
+		}
+		a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #585553;
+
+	}
+	#botao1{
+		floating: right
+		background-color: red;
+		padding: 10px 25px;
+		font: bold 12px sans-serif;
+		border-radius: 20px;
+		text-shadow: 0px 1px 0px white;
+		border: 1px solid #9eb9c3;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#edf6f9+0,cde5ee+100 */
+background: #edf6f9; /* Old browsers */
+background: -moz-linear-gradient(top,  #edf6f9 0%, #cde5ee 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #edf6f9 0%,#cde5ee 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #edf6f9 0%,#cde5ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf6f9', endColorstr='#cde5ee',GradientType=0 ); /* IE6-9 */
+color: #527988;
+box-shadow: 0px 0px 10px #c9c9c9;
+	}
+	a{
+text-decoration: none;
+font-size: 20px;
+color: #585553;
+
+}
+#usuario2{
+height: 230px;
+margin-top:-60px;
+margin-left: -20px;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2f6f8+77,b5c6d0+100,e0eff9+100 */
+background: rgb(242,246,248); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(242,246,248,1) 77%, rgba(181,198,208,1) 100%, rgba(224,239,249,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(242,246,248,1) 77%,rgba(181,198,208,1) 100%,rgba(224,239,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(242,246,248,1) 77%,rgba(181,198,208,1) 100%,rgba(224,239,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+  </style>
+  </head>
 <body>
-	
-
-			
-		
-				<div class="box" >
-					<div class="boxint">
-					<form>
-					<br>
-					<strong>Nome:</strong><br><br>
-				  	<input type="nome" name="" placeholder="Nome completo" required><br><br>
-
-				  	<strong>E-mail:</strong><br><br>
-				  	<input type="email" name="" placeholder="Digite seu e-mail" required><br><br>
-
-				 	<strong>Senha:</strong><br><br>
-					<input type="password" name="" placeholder="senha" required><br><br><br>
-					<input class="btn" type="submit" value="Cadastrar"><br><br>
-					<a href="index.html">Voltar</a>
-					
-					</form>
-					</div>
+  <div id="login-box">
+    <div id="login-box-interno">
+			<div id="login-box-label">
+				<center>
+					<div id="usuario2">
+					<img src="assets/img/usuario2.png" width="272" height="300">
 				</div>
-			
-		
-	
+				<div class="input-div" id="input-Nome">
+					<input type="email" name="username" placeholder="Nome"  required >
+				</div>
+				<div class="input-div" id="input-usuario">
+					<input type="email" name="username" placeholder="Seu E-mail"  required >
+				</div>
+				<div class="input-div" id="input-Telefone">
+					<input type="number" name="number" placeholder="Telefone"   required>
+				</div>
+        <div class="input-div" id="input-senha">
+					<input type="password" name="password" placeholder="senha"   required>
+				</div>
+			<div>
 
-</body>
+          <div id="botoes">
+
+				<input id="botao"class="btn" type="submit" nome="Entrar" value="cadastrar Usuario"onclick="return Login()"></div>
+				<a href="file:///C:/Users/joilson/Desktop/Projeto-pet-master/index.html">
+<div id="botoes1">
+				<input id="botao1"class="btn" type="submit" nome="Entrar" value="Voltar"onclick="return Login()"> </div></a>
+
+</div>
+    </div>
+    </div>
+  </body>
 </html>
