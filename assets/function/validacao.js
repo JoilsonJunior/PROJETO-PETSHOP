@@ -1,12 +1,21 @@
-function validar(){
 
-         if (alert("Usuário cadastrado")) {
-                window.location = "index.html";
-                return true;
-         };
+
+       function Enviar() {
+ 
+    var nome = document.getElementById("nome");
+ 
+    if (nome.value != "") {
+        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+       window.location.href="index.html";
+            return true;
+    }else{
+        alert("Dados incorretos, tente novamente")
+    }
+ 
+}
       
     
-}
+
 
 
 
