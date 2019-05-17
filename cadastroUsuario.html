@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>app</title>
 <link rel="stylesheet" type="text/css" href="assets/css/cadastrodeusuario.css">
+<script type="text/javascript" src="assets/function/validacao.js"></script>
 <meta id="viewport" name="viewport" content="width=device-whidth,">
  
   </head>
@@ -15,6 +16,7 @@
 					<div id="usuario2">
 					<img src="assets/img/usuario2.png" width="272" height="300">
 				</div>
+				<form method="post" onsubmit="return validar()">
 				<div class="input-div" id="input-Nome">
 					<input type="email" name="username" placeholder="Nome"  required >
 				</div>
@@ -31,12 +33,13 @@
 
           <div id="botoes">
 
-				<input id="botao"class="btn" type="submit" nome="Entrar" value="cadastrar Usuario">
+				<input id="botao"class="btn" type="submit" nome="Entrar" value="cadastrar Usuario" >
 			</div>
-				
+				</form>
 				<div id="botoes1">
-				<a href="index.html"><input id="botao1"class="btn" type="submit" value="Voltar"onclick="return Login()"> </a>
-			</div>
+				<a href="index.html"><input style="width: 30px;" id="botao1"class="btn" type="" value="Voltar"
+					> </a>
+				</div>
 
 </div>
     </div>

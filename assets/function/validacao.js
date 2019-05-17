@@ -1,4 +1,10 @@
-function cadastroUsuario(){
+function validar(){
+
+         if (alert("Usuário cadastrado")) {
+                window.location = "index.html";
+                return true;
+         };
+      
     
 }
 
