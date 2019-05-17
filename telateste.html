@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>Pedidos</title>
+    <style>
+    </style>
+
+    <script type="text/javascript">
+        
+        const adicionar = document.getElementById("adicionar");
+
+        adicionar.addEventListener("click", function (event) {
+
+        var table = document.getElementById("tabela");
+        var row = table.insertRow(2);
+
+        row.insertCell(0).innerHTML = "Cód. Produto:";
+        row.insertCell(1).innerHTML = `<input type="text" name="codProduto[]" placeholder="CodProduto"> `;
+        row.insertCell(2).innerHTML = "Quantidade";
+        row.insertCell(3).innerHTML = `<input type="text" name="razao[]" placeholder="Quantidade">`;
+        row.insertCell(4).innerHTML = "Desconto";
+        row.insertCell(5).innerHTML = `<input type="text" name="desconto[]" placeholder="Desconto">`;
+
+        });
+
+
+
+
+    </script>
+</head>
+<body>
+
+    <form method="POST">
+            Receita
+            <input type="text" name="receita" placeholder="Ex: Pão de queijo">
+
+
+
+        <table border=1>
+        <tr><td colspan="6" style="text-align: center"><label>Pedidos:</label></td></tr>
+        <tr>
+
+        <div id="codProduto">
+            <td>Cód. Produto:</td> 
+            <td><input type="text" name="codProduto[]" placeholder="Cód. Produto"></td>
+        </div>
+
+
+
+
+        <div id="quantidade">
+            <td><label>Quantidade:</label></td>
+            <td><input type="text" name="razao[]" placeholder="Quantidade"></td>
+        </div>
+
+
+
+
+        <div id="desconto">
+            <td><label>Desconto:</label></td>
+            <td><input type="text" name="desconto[]" placeholder="Desconto"></td>
+        </div>
+            </tr>
+        </table>
+
+  <button type="button" id="adicionar">Adicionar</button>
+  <button type="submit">Cadastrar</button>
+
+    </form> 
+
+    <script>
+   
+    </script>
+
+
+
+
+
+</body>
+</html>
