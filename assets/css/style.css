@@ -18,7 +18,7 @@ body{
      overflow:hidden;
    }
    #login-box-label{
-     height: 145px;
+     height: 220px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2f6f8+77,b5c6d0+100,e0eff9+100 */
 background: rgb(242,246,248); /* Old browsers */
 background: -moz-linear-gradient(top,  rgba(242,246,248,1) 77%, rgba(181,198,208,1) 100%, rgba(224,239,249,1) 100%); /* FF3.6-15 */
@@ -82,7 +82,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', end
    #botao{
      float:left;
      margin-top: -10px;
-     margin-left: 40px;
+     margin-left: 60px;
      background-color: red;
      padding: 10px 25px;
      font: bold 12px sans-serif;
@@ -99,14 +99,15 @@ color: #527988;
 box-shadow: 0px 0px 10px #c9c9c9;
    }
    a{
+     margin-left: 20px;
  text-decoration: none;
  font-size: 20px;
  color: #585553;
  }
- #Agendar1{
+ #logo23{
 
-margin-top:-10px;
-margin-left: -1px;
+margin-top:-30px;
+margin-left: -10px;
 
 }
 
