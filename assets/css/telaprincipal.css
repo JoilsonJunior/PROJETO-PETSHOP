@@ -90,7 +90,7 @@ margin-left: -20px;
 
 }
 #Pet9{
-  margin-top:-20px;
+  margin-top: 20px;
   margin-left: 150px;
 
 
@@ -98,3 +98,16 @@ margin-left: -20px;
 #Pet7{
   margin-top:-160px;
   margin-left: -180px;
+
+  }
+
+  #Pet8{
+  margin-top:-160px;
+  margin-left: -180px;
+
+  }
+
+  #maps{
+margin-top:-150px;
+
+  }
