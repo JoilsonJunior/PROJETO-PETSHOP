@@ -1,6 +1,25 @@
 
 
-       function Enviar() {
+  function agendamento() {
+ 
+    var nome = document.getElementById("input-Nome");
+ 
+    if (nome.value != "") {
+        alert('Obrigado sr(a) ' + nome.value + ' Feito agendamento');
+  
+            return true;
+    }else{
+        alert("Ja foi cadastrado!");
+    }
+ 
+}
+
+
+
+
+   
+
+    function Enviar() {
  
     var nome = document.getElementById("nome");
  
@@ -17,14 +36,12 @@
     
 
 
-
-
-
 var usuarios = [
     {"login": "teste@teste", "senha": "1234"},
     {"login": "mamae", "senha": "abacaxi"},
     {"login": "papai", "senha": "melancia"},
 ];
+
 
 function Login() {
     var usuario = document.getElementsByName('username')[0].value.toLowerCase();
